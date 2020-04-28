@@ -1,0 +1,81 @@
+<template lang="pug">
+.page2
+  .so.box
+    .so.so-0
+    .so.so-1
+    .so.so-2
+    .so.so-3
+    .so.so-4
+    .so.so-5
+  img.so.text(src="@|119.png|")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.so {
+  position: absolute;
+}
+.page2 {
+  background-image: url('@|121.jpg|');
+}
+.box {
+  left: 0px;
+  top: 257px;
+  z-index: 0;
+  width: 1356px;
+  height: 629px;
+  .so {
+    background-image: url('@|12.png|')
+  }
+}
+.text {
+  left: 59px;
+  top: 1001px;
+  z-index: 0;
+}
+.so-0 {
+  left: 560px;
+  top: 0px;
+  width: 610px;
+  height: 109px;
+  z-index: 5;
+}
+.so-1 {
+  left: 320px;
+  top: 126px;
+  width: 610px;
+  height: 109px;
+  z-index: 4;
+}
+.so-2 {
+  left: 660px;
+  top: 260px;
+  width: 610px;
+  height: 109px;
+  z-index: 3;
+}
+.so-3 {
+  left: 144px;
+  top: 364px;
+  width: 540px;
+  height: 109px;
+  z-index: 2;
+}
+.so-4 {
+  left: 816px;
+  top: 451px;
+  width: 540px;
+  height: 109px;
+  z-index: 1;
+}
+.so-5 {
+  left: 0px;
+  top: 520px;
+  width: 540px;
+  height: 109px;
+  z-index: 0;
+}
+
+</style>

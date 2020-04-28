@@ -1,0 +1,61 @@
+<template lang="pug">
+.page-1
+  img.so.so-0(src="@|106.png|")
+  img.so.so-1(src="@|105.png|")
+  img.so.so-2(src="@|104.png|")
+  img.so.so-3(src="@|102.png|" o-animation="flicker" go="page2")
+  //- 背景元素
+  img.so.so-4(src="@|15.png|")
+  img.so.so-5(src="@|110.png|")
+
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.animate('bounceInLeft', this.query('.so-1'))
+      owo.animate('bounceInDown', this.query('.so-0'), 600)
+      owo.animate('bounceIn', this.query('.so-2'), 1600)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page-1 {
+  background-image: url('@|109.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 56px;
+  top: 214px;
+  z-index: 5;
+}
+.so-1 {
+  left: 68px;
+  top: 341px;
+  z-index: 4;
+}
+.so-2 {
+  left: 71px;
+  top: 569px;
+  z-index: 3;
+}
+.so-3 {
+  left: 223px;
+  top: 939px;
+  z-index: 2;
+}
+.so-4 {
+  left: 78px;
+  top: 823px;
+  z-index: 1;
+}
+.so-5 {
+  left: 279px;
+  top: 1277px;
+  z-index: 0;
+}
+</style>
