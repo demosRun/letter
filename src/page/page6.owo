@@ -1,10 +1,167 @@
 <template lang="pug">
 .page6
-    
+  //- 背景
+  img.so.so-0(src="@|139.png|")
+  input.so.so-1
+  input.so.so-2
+  input.so.so-3
+  input.so.so-4
+  input.so.so-5
+  textarea.so.so-6
+  textarea.so.so-7
+  input.so.so-8
+  input.so.so-9
+  input.so.so-10
+  img.so.so-11(src="@|132.png|")
+  .so.so-12.button
+    .text-box.so 发送留言
+    img.so.bottom-bg(src="@|125.png|")
 </template>
 <script>
 module.exports = {
 }
 </script>
 <style lang="less">
+.page6 {
+  background-image: url('@|48.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 87px;
+  top: 189px;
+  z-index: 1;
+}
+
+.so-1 {
+  left: 85px;
+  top: 244px;
+  width: 546px;
+  height: 77px;
+  z-index: 10;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|142.png|');
+}
+.so-2 {
+  left: 85px;
+  top: 331px;
+  width: 546px;
+  height: 77px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|142.png|');
+}
+.so-3 {
+  left: 85px;
+  top: 418px;
+  width: 546px;
+  height: 77px;
+  z-index: 8;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|142.png|');
+}
+.so-4 {
+  left: 85px;
+  top: 505px;
+  width: 546px;
+  height: 77px;
+  z-index: 7;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|144.png|');
+}
+.so-5 {
+  left: 85px;
+  top: 592px;
+  width: 546px;
+  height: 77px;
+  z-index: 6;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|144.png|');
+}
+.so-6 {
+  left: 85px;
+  top: 679px;
+  width: 546px;
+  height: 157px;
+  z-index: 6;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  background-image: url('@|146.png|');
+}
+.so-7 {
+  left: 85px;
+  top: 909px;
+  width: 546px;
+  height: 107px;
+  z-index: 5;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  background-image: url('@|147.png|');
+}
+.so-8 {
+  left: 85px;
+  top: 1049px;
+  width: 546px;
+  height: 77px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|144.png|');
+}
+.so-9 {
+  left: 85px;
+  top: 1136px;
+  width: 546px;
+  height: 77px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|149.png|');
+}
+.so-10 {
+  left: 85px;
+  top: 1223px;
+  width: 346px;
+  height: 77px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 32px;
+  padding: 0 10px;
+  background-image: url('@|133.png|');
+}
+.so-11 {
+  left: 468px;
+  top: 1222px;
+  z-index: 0;
+}
+.so-12 {
+  left: 221px;
+  top: 1357px;
+  z-index: 0;
+}
 </style>

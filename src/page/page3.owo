@@ -93,7 +93,7 @@
 <script>
 module.exports = {
   data: {
-    activeIndex: -100,
+    activeIndex: 0,
     activeEL: null
   },
   created: function () {
@@ -101,11 +101,14 @@ module.exports = {
     var myScroll = new IScroll(this.query('#wrapper'), {
       scrollbars: true
     })
+    cityList[1].classList.add('checked')
+    this.data.activeEL = cityList[1]
     myScroll.on('scrollEnd', () => {
       const activeIndex = Math.round(myScroll.y / 150)
       myScroll.scrollTo(0, activeIndex * 150, 100)
       if (this.data.activeIndex === activeIndex) return
       this.data.activeIndex = activeIndex
+      console.log(activeIndex)
       cityList.forEach(element => {
         element.classList.remove('checked')
       });
@@ -116,8 +119,9 @@ module.exports = {
     })
   },
   next: function () {
+    console.log(this.data.activeEL)
     const info = this.data.activeEL.querySelector('.edit')
-    console.log(info)
+    
     const title = info.querySelector('h1').innerHTML
     const name = info.querySelector('h2').innerHTML
     const position = info.querySelector('h3').innerHTML

@@ -12,7 +12,7 @@
   .so.so-7.button.mini
     .text-box.so 再来一张
     img.so.bottom-bg(src="@|125.png|")
-  .so.so-8.button.mini
+  .so.so-8.button.mini(go="page6")
     .text-box.so 我要留言
     img.so.bottom-bg(src="@|125.png|")
 </template>
@@ -20,7 +20,7 @@
 module.exports = {
   saveImage: function () {
     owo.tool.toast('长按图片保存!')
-  }
+  },
 }
 </script>
 <style lang="less">
