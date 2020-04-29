@@ -1,0 +1,116 @@
+<template lang="pug">
+.page4
+  .so.so-0 稿件标题稿件标题稿件标题稿件<br>标题
+  img.so.so-1(src="@|people.png|")
+  .so.so-2 王东峰
+  .so.so-3 河北省委书记
+  .so.so-4
+    p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+  img.so.so-5(src="@|music.png|")
+  img.so.so-6(src="@|120.png|")
+  .so.so-7.button(go="page5")
+    .text-box.so 生成我的专属海报
+    img.so.bottom-bg(src="@|125.png|")
+  .so.so-10.button(go="page3")
+    .text-box.so 返回目录
+    img.so.bottom-bg(src="@|125.png|")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.page4 {
+  background-image: url('@|48.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 109px;
+  top: 254px;
+  z-index: 8;
+  color: #99642B;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 54px;
+}
+.so-1 {
+  left: 162px;
+  top: 413px;
+  z-index: 7;
+}
+.so-2 {
+  left: 398px;
+  top: 498px;
+  z-index: 6;
+  color: #99642B;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.so-3 {
+  left: 398px;
+  top: 561px;
+  z-index: 5;
+  color: #99642B;
+  font-size: 28px;
+  line-height: 30px;
+  width: 280px;
+}
+.so-4 {
+  left: 98px;
+  top: 733px;
+  width: 565px;
+  z-index: 0;
+  font-size: 24px;
+  line-height: 1.7;
+  overflow: auto;
+  height: 240px;
+}
+.so-5 {
+  left: 101px;
+  top: 988px;
+  z-index: 3;
+}
+.so-6 {
+  left: 180px;
+  top: 984px;
+  z-index: 2;
+}
+.so-7 {
+  left: 63px;
+  top: 1092px;
+  width: 285px;
+  height: 105px;
+  z-index: 1;
+}
+.so-8 {
+  left: 11px;
+  top: 0px;
+  z-index: 0;
+}
+.so-9 {
+  left: 0px;
+  top: 19px;
+  z-index: -1;
+}
+.so-10 {
+  left: 383px;
+  top: 1092px;
+  width: 285px;
+  height: 105px;
+  z-index: 2;
+}
+.so-11 {
+  left: 11px;
+  top: 0px;
+  z-index: -3;
+}
+.so-12 {
+  left: 0px;
+  top: 19px;
+  z-index: -4;
+}
+
+</style>

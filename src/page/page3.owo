@@ -1,0 +1,195 @@
+<template lang="pug">
+.page3
+  img.so.so-0(src="@|46.png|")
+  img.so.so-1(src="@|45.png|" o-animation="flicker")
+  #wrapper.wheel-view
+    ul
+      //- 保留条目
+      li
+        .city(style="color: #ccc; font-size: 36px;") 滚动选择省份
+      li
+        .city 山西省委书记
+        .edit
+          h1 山西省委书记
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 陕西省委书记
+        .edit
+          h1 陕西省委书记题稿件标题稿件
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 广东省委书记
+        .edit
+          h1 广东省委书记标题稿件标题稿件
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 河北省委书记
+        .edit
+          h1 河北省委书记稿件标题稿件
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 山西省委书记
+        .edit
+          h1 山西省委书记稿件标题稿件
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 陕西省委书记
+      li
+        .city 广东省委书记
+        .edit
+          h1 稿件标题稿件标题稿件标题稿件
+          h2 王东峰
+          h3 河北省委书记
+          .image @|people.png|
+          .text
+            p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
+          .music http://flv4.people.com.cn/videofile6/pvmsvideo/2019/3/13/RenJiaHui_2371c0801d09c3ec8c687ad5f890a7db.mp3
+          .video http://flv3.people.com.cn/dev1/mvideo/vodfiles/2020/04/28/54a3c9fea4138224efe6cbc9de0465b9_c.mp4
+      li
+        .city 河北省委书记
+      li
+        .city 山西省委书记
+      li
+        .city 陕西省委书记
+      li
+        .city 广东省委书记
+      //- 保留条目
+      li
+        .city(style="color: #ccc; font-size: 36px;") 没有更多省份了
+  .so.so-2.button(o-tap="next")
+    .text-box.so 确定
+    img.so.bottom-bg(src="@|125.png|")
+</template>
+<script>
+module.exports = {
+  data: {
+    activeIndex: -100,
+    activeEL: null
+  },
+  created: function () {
+    const cityList = this.queryAll('.wheel-view ul li')
+    var myScroll = new IScroll(this.query('#wrapper'), {
+      scrollbars: true
+    })
+    myScroll.on('scrollEnd', () => {
+      const activeIndex = Math.round(myScroll.y / 150)
+      myScroll.scrollTo(0, activeIndex * 150, 100)
+      if (this.data.activeIndex === activeIndex) return
+      this.data.activeIndex = activeIndex
+      cityList.forEach(element => {
+        element.classList.remove('checked')
+      });
+      setTimeout(() => {
+        cityList[-activeIndex + 1].classList.add('checked')
+        this.data.activeEL = cityList[-activeIndex + 1]
+      }, 100);
+    })
+  },
+  next: function () {
+    const info = this.data.activeEL.querySelector('.edit')
+    console.log(info)
+    const title = info.querySelector('h1').innerHTML
+    const name = info.querySelector('h2').innerHTML
+    const position = info.querySelector('h3').innerHTML
+    const image = info.querySelector('.image').innerHTML
+    const text = info.querySelector('.text').innerHTML
+    const music = info.querySelector('.music').innerHTML
+    const video = info.querySelector('.video').innerHTML
+    if (title && name && position && image && text) {
+      document.querySelector('.page4 .so-0').innerHTML = title
+      document.querySelector('.page4 .so-2').innerHTML = name
+      document.querySelector('.page4 .so-3').innerHTML = position
+      document.querySelector('.page4 .so-1').src = image
+      document.querySelector('.page4 .so-4').innerHTML = text
+      // document.querySelector('.page4 .so-0').innerHTML = music
+      // document.querySelector('.page4 .so-0').innerHTML = video
+      owo.go({
+        page: 'page4'
+      })
+    } else {
+      owo.too.toast('内容为空，请选择其他!')
+    }
+    console.log(this.data.activeEL)
+  }
+}
+</script>
+<style lang="less">
+.page3 {
+  background-image: url('@|48.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 184px;
+  top: 317px;
+  z-index: 2;
+}
+.so-1 {
+  left: 274px;
+  top: 871px;
+  z-index: 1;
+}
+.so-2 {
+  left: 231px;
+  top: 1017px;
+  z-index: 0;
+}
+.wheel-view {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -19%;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 450px;
+  font-size: 40px;
+  line-height: 120px;
+  text-align: center;
+  overflow: auto;
+  font-weight: bold;
+  font-family: "Microsoft Yahei";
+}
+.wheel-view li {
+  margin: 30px 0;
+  .edit {
+    display: none;
+  }
+}
+.wheel-view li.checked {
+  color: #386b99;
+  font-size: 60px;
+  background-color: #f7e8ce;
+}
+</style>

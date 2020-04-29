@@ -50,3 +50,35 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   visibility: hidden;
   clear: both;
 }
+
+.button {
+  width: 285px;
+  height: 105px;
+}
+.button .bottom-bg {
+  left: 0px;
+  top: 19px;
+  z-index: -2;
+}
+.button:active .text-box {
+  top: 10px;
+}
+.button .su {
+  pointer-events: none;
+  user-select: none;
+}
+.button .text-box {
+  left: 11px;
+  top: 0px;
+  width: 263px;
+  height: 69px;
+  z-index: 2;
+  position: absolute;
+  background-image: url('@|126.png|');
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  color: #99642b;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei';
+}

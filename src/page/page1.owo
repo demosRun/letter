@@ -3,7 +3,7 @@
   img.so.so-0(src="@|106.png|")
   img.so.so-1(src="@|105.png|")
   img.so.so-2(src="@|104.png|")
-  img.so.so-3(src="@|102.png|" o-animation="flicker" go="page2")
+  img.so.so-3(src="@|102.png|" o-animation="flicker" o-tap="goPage('page2')")
   //- 背景元素
   img.so.so-4(src="@|15.png|")
   img.so.so-5(src="@|110.png|")
@@ -11,6 +11,11 @@
 </template>
 
 <script>
+  function goPage(pageName) {
+    owo.go({
+      page: pageName
+    })
+  }
   module.exports = {
     created: function () {
       owo.animate('bounceInLeft', this.query('.so-1'))

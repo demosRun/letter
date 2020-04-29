@@ -2,15 +2,39 @@
 .page2
   .so.box
     .so.so-0
+      h2 用户名
+      h3 “啥时候家门口能通高铁？”
     .so.so-1
+      h2 用户名
+      h3 “文字内容文字内容文字内容文字内容”
     .so.so-2
+      h2 用户名
+      h3 “文字内容文字内容文字内容文字内容”
     .so.so-3
+      h2 用户名
+      h3 “文字内容文字内容文字内容文字内容”
     .so.so-4
+      h2 用户名
+      h3 “文字内容文字内容文字内容文字内容”
     .so.so-5
+      h2 用户名
+      h3 “文字内容文字内容文字内容文字内容”
   img.so.text(src="@|119.png|")
 </template>
 <script>
 module.exports = {
+  created: function () {
+    owo.animate('pulse', this.query('.text'))
+    setTimeout(() => {
+      this.query('.box').style.left = '-800px'
+    }, 800);
+    setTimeout(() => {
+      owo.go({
+        page: 'page3',
+        noBack: true
+      })
+    }, 3500);
+  }
 }
 </script>
 <style lang="less">
@@ -21,13 +45,29 @@ module.exports = {
   background-image: url('@|121.jpg|');
 }
 .box {
-  left: 0px;
+  left: 750px;
   top: 257px;
   z-index: 0;
   width: 1356px;
   height: 629px;
+  transition: left 3s linear;
   .so {
-    background-image: url('@|12.png|')
+    background-image: url('@|12.png|');
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    h2 {
+      padding-left: 115px;
+      margin-top: 8px;
+      font-size: 24px;
+    }
+    h3 {
+      padding-left: 115px;
+      width: 382px;
+      height: 40px;
+      overflow: hidden;
+    }
   }
 }
 .text {

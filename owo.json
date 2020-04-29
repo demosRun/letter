@@ -85,6 +85,15 @@
 		{
 			"name": "autoScale",
 			"src": "https://cunchu.site/owo/plug/autoScale.js"
+		},
+		{
+			"name": "toast",
+			"afterbody": true,
+			"src": "./owo_modules/toast.js"
+		},
+		{
+			"name": "iscroll-lite",
+			"src": "./owo_modules/iscroll-lite.js"
 		}
 	],
 	"styleList": [
@@ -108,6 +117,26 @@
 		{
 			"name": "page2",
 			"src": "/src/page/page2.owo",
+			"type": "page"
+		},
+		{
+			"name": "page3",
+			"src": "/src/page/page3.owo",
+			"type": "page"
+		},
+		{
+			"name": "page4",
+			"src": "/src/page/page4.owo",
+			"type": "page"
+		},
+		{
+			"name": "page5",
+			"src": "/src/page/page5.owo",
+			"type": "page"
+		},
+		{
+			"name": "page6",
+			"src": "/src/page/page6.owo",
 			"type": "page"
 		}
 	],
@@ -145,5 +174,11 @@
 			},
 			"startAtHome": true
 		}
+	},
+	"globalAni": {
+		"in": "moveToLeft",
+		"out": "scaleUp",
+		"backIn": "moveToRight",
+		"backOut": "scaleUp"
 	}
 }

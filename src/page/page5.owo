@@ -1,0 +1,98 @@
+<template lang="pug">
+.page5
+  img.so.so-0(src="@|143.png|")
+  .so.so-1
+    img.so.so-2(src="@|151.png|")
+    img.so.so-3(src="@|153.png|")
+  img.so.so-4(src="@|148.png|")
+  img.so.so-5(src="@|54.png|")
+  .so.so-6.button.mini(o-tap="saveImage")
+    .text-box.so 保存图片
+    img.so.bottom-bg(src="@|125.png|")
+  .so.so-7.button.mini
+    .text-box.so 再来一张
+    img.so.bottom-bg(src="@|125.png|")
+  .so.so-8.button.mini
+    .text-box.so 我要留言
+    img.so.bottom-bg(src="@|125.png|")
+</template>
+<script>
+module.exports = {
+  saveImage: function () {
+    owo.tool.toast('长按图片保存!')
+  }
+}
+</script>
+<style lang="less">
+.page5 {
+  background-image: url('@|48.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 221px;
+  top: 194px;
+  z-index: 6;
+}
+.so-1 {
+  left: 73px;
+  top: 259px;
+  width: 594px;
+  height: 819px;
+  z-index: 5;
+}
+.so-2 {
+  left: 431px;
+  top: 92px;
+  z-index: 4;
+}
+.so-3 {
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+}
+.so-4 {
+  left: 47px;
+  top: 923px;
+  z-index: 10;
+}
+.so-5 {
+  left: 297px;
+  top: 935px;
+  z-index: 19;
+}
+.so-6 {
+  left: 36px;
+  top: 1235px;
+  z-index: 0;
+}
+.so-7 {
+  left: 270px;
+  top: 1235px;
+  z-index: 1;
+}
+.so-8 {
+  left: 512px;
+  top: 1235px;
+  z-index: 1;
+}
+.mini {
+  width: 200px;
+  .bottom-bg {
+    width: 200px;
+  }
+  .text-box {
+    width: 185px;
+    background-size: 185px auto;
+    background-repeat: no-repeat;
+    height: 56px;
+    left: 8px;
+    top: 9px;
+    line-height: 50px;
+  }
+}
+.mini:active .text-box {
+  top: 14px;
+}
+</style>
