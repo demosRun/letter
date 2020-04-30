@@ -4,23 +4,44 @@
   .so.so-1
     img.so.so-2(src="@|151.png|")
     img.so.so-3(src="@|153.png|")
+    .share-text-box
   img.so.so-4(src="@|148.png|")
   img.so.so-5(src="@|54.png|")
   .so.so-6.button.mini(o-tap="saveImage")
     .text-box.so 保存图片
     img.so.bottom-bg(src="@|125.png|")
-  .so.so-7.button.mini
+  .so.so-7.button.mini(o-tap="back")
     .text-box.so 再来一张
     img.so.bottom-bg(src="@|125.png|")
-  .so.so-8.button.mini(go="page6")
+  .so.so-8.button.mini(o-tap="next")
     .text-box.so 我要留言
     img.so.bottom-bg(src="@|125.png|")
 </template>
 <script>
 module.exports = {
+  created: function () {
+    setTimeout(() => {
+      this.query('.so-1').style.top = '260px'
+    }, 800);
+  },
   saveImage: function () {
+    buttonMusic.play()
     owo.tool.toast('长按图片保存!')
   },
+  back: function () {
+    buttonMusic.play()
+    owo.go({
+      page: 'page3',
+      noBack: true
+    })
+  },
+  next: function () {
+    buttonMusic.play()
+    owo.go({
+      page: 'page6',
+      noBack: true
+    })
+  }
 }
 </script>
 <style lang="less">
@@ -37,10 +58,11 @@ module.exports = {
 }
 .so-1 {
   left: 73px;
-  top: 259px;
+  top: 340px;
   width: 594px;
   height: 819px;
   z-index: 5;
+  transition: top 0.8s;
 }
 .so-2 {
   left: 431px;
@@ -94,5 +116,23 @@ module.exports = {
 }
 .mini:active .text-box {
   top: 14px;
+}
+.share-text-box {
+  position: absolute;
+  z-index: 99;
+  color: #99642b;
+  font-size: 28px;
+  line-height: 1.7;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 32%;
+  h2, h3, h4 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
 }
 </style>

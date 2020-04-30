@@ -2,21 +2,27 @@
 .page2
   .so.box
     .so.so-0
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “啥时候家门口能通高铁？”
     .so.so-1
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
     .so.so-2
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
     .so.so-3
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
     .so.so-4
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
     .so.so-5
+      img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
   img.so.text(src="@|119.png|")
@@ -57,6 +63,13 @@ module.exports = {
     line-height: 40px;
     font-size: 20px;
     background-repeat: no-repeat;
+    img {
+      position: absolute;
+      left: 13px;
+      top: 4px;
+      width: 85px;
+      height: 85px;
+    }
     h2 {
       padding-left: 115px;
       margin-top: 8px;
@@ -88,6 +101,7 @@ module.exports = {
   width: 610px;
   height: 109px;
   z-index: 4;
+  
 }
 .so-2 {
   left: 660px;

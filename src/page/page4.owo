@@ -6,17 +6,68 @@
   .so.so-3 河北省委书记
   .so.so-4
     p 文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容
-  img.so.so-5(src="@|music.png|")
-  img.so.so-6(src="@|120.png|")
-  .so.so-7.button(go="page5")
+  .tool-bar
+    img.so-5.music(src="@|music.png|" o-tap="playMusic")
+    img.so-6.video(src="@|120.png|" o-tap="playVideo")
+  .so.so-7.button(o-tap="next")
     .text-box.so 生成我的专属海报
     img.so.bottom-bg(src="@|125.png|")
-  .so.so-10.button(go="page3")
+  .so.so-10.button(o-tap="back")
     .text-box.so 返回目录
     img.so.bottom-bg(src="@|125.png|")
+  //- 音视频播放
+  audio
+  .video-box
+    img(src="@|close.png|" o-tap="closeVideo")
+    video
 </template>
 <script>
 module.exports = {
+  data: {
+    music: null,
+    video: null
+  },
+  show: function () {
+    console.log(this.data)
+    // 判断是否有音频和视频
+    if (this.data.music) {
+      this.query('.music').style.display = 'block'
+    }
+    if (this.data.video) {
+      this.query('.video').style.display = 'block'
+    }
+  },
+  playMusic: function () {
+    const audio = this.query('audio')
+    audio.src = this.data.music
+    audio.play()
+  },
+  playVideo: function () {
+    const video = this.query('video')
+    video.src = this.data.video
+    this.query('.video-box').style.display = 'block'
+    video.play()
+  },
+  next: function () {
+    buttonMusic.play()
+    owo.go({
+      page: 'page5',
+      noBack: true
+    })
+  },
+  back: function () {
+    buttonMusic.play()
+    owo.go({
+      page: 'page3',
+      noBack: true
+    })
+  },
+  closeVideo: function () {
+    const video = this.query('video')
+    video.src = this.data.video
+    this.query('.video-box').style.display = 'none'
+    video.pause()
+  }
 }
 </script>
 <style lang="less">
@@ -69,14 +120,8 @@ module.exports = {
   height: 240px;
 }
 .so-5 {
-  left: 101px;
-  top: 988px;
-  z-index: 3;
 }
 .so-6 {
-  left: 180px;
-  top: 984px;
-  z-index: 2;
 }
 .so-7 {
   left: 63px;
@@ -112,5 +157,44 @@ module.exports = {
   top: 19px;
   z-index: -4;
 }
-
+.tool-bar {
+  position: absolute;
+  top: 1000px;
+  height: 60px;
+  width: 200px;
+  left: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  img {
+    margin-right: 20px;
+    display: none;
+  }
+}
+audio, .video-box {
+  display: none;
+}
+.video-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+  img {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 64px;
+  }
+  video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+}
 </style>
