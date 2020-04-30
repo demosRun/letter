@@ -94,6 +94,10 @@
 		{
 			"name": "iscroll-lite",
 			"src": "./owo_modules/iscroll-lite.js"
+		},
+		{
+			"name": "html2canvas",
+			"src": "./owo_modules/html2canvas.min.js"
 		}
 	],
 	"styleList": [
