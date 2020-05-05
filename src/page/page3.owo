@@ -150,8 +150,11 @@ module.exports = {
     })
   },
   next: function () {
-    console.log(this.data.activeEL)
     const info = this.data.activeEL.querySelector('.edit')
+    if (!info) {
+      owo.tool.toast('当前省份暂时没有内容!')
+      return
+    }
     
     const title = info.querySelector('h1').innerHTML
     const name = info.querySelector('h2').innerHTML
