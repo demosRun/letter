@@ -16,7 +16,7 @@
     .text-box.so 返回目录
     img.so.bottom-bg(src="@|125.png|")
   //- 音视频播放
-  audio
+  audio.music
   .video-box
     img(src="@|close.png|" o-tap="closeVideo")
     video
@@ -25,7 +25,8 @@
 module.exports = {
   data: {
     music: null,
-    video: null
+    video: null,
+    musicIsPlaying: false
   },
   show: function () {
     console.log(this.data)
@@ -39,16 +40,35 @@ module.exports = {
   },
   playMusic: function () {
     const audio = this.query('audio')
-    audio.src = this.data.music
-    audio.play()
+    if (this.data.musicIsPlaying) {
+      audio.pause()
+      this.query('.so-5').src = "@|music.png|"
+      this.data.musicIsPlaying = false
+    } else {
+      this.query('.so-5').src = "@|zanting.png|"
+      audio.src = this.data.music
+      audio.currentTime = 0
+      audio.play()
+      this.data.musicIsPlaying = true
+    }
   },
   playVideo: function () {
+    // 停止音乐播放
+    const audio = this.query('audio')
+    audio.pause()
+    this.query('.so-5').src = "@|music.png|"
+    this.data.musicIsPlaying = false
     const video = this.query('video')
     video.src = this.data.video
     this.query('.video-box').style.display = 'block'
     video.play()
   },
   next: function () {
+    // 停止音乐播放
+    const audio = this.query('audio')
+    audio.pause()
+    this.query('.so-5').src = "@|music.png|"
+    this.data.musicIsPlaying = false
     buttonMusic.play()
     owo.go({
       page: 'page5',
@@ -56,6 +76,12 @@ module.exports = {
     })
   },
   back: function () {
+    // 停止音乐播放
+    const audio = this.query('audio')
+    audio.pause()
+    this.query('.so-5').src = "@|music.png|"
+    this.data.musicIsPlaying = false
+
     buttonMusic.play()
     owo.go({
       page: 'page3',
@@ -169,6 +195,7 @@ module.exports = {
   img {
     margin-right: 20px;
     display: none;
+    width: 50px;
   }
 }
 audio, .video-box {
