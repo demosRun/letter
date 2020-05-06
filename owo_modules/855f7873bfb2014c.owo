@@ -1,0 +1,137 @@
+<template lang="pug">
+.loading-box
+  img.loading(src="@|loading-logo.png|")
+  .loading-bar
+    .num-bar
+  span.text Loading
+  .num 0%
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      imgList: [
+        "@|12.png|",
+        "@|15.png|",
+        "@|45.png|",
+        "@|46.png|",
+        "@|48.jpg|",
+        "@|102.png|",
+        "@|104.png|",
+        "@|106.png|",
+        "@|109.jpg|",
+        "@|110.png|",
+        "@|120.png|",
+        "@|105.png|",
+        "@|121.jpg|",
+        "@|125.png|",
+        "@|126.png|",
+        "@|148.png|",
+        "@|loading-logo.png|",
+        "@|music.png|",
+        "@|144.png|",
+        "@|143.png|",
+        "@|142.png|",
+        "@|133.png|",
+        "@|132.png|",
+        "@|54.png|",
+        "@|139.png|",
+        "@|146.png|",
+        "@|147.png|",
+        "@|153.png|",
+      ]
+    },
+    show: function () {
+      const mum = owo.query('.num')[0]
+      const numBar = owo.query('.num-bar')[0]
+      this.preloadImages(this.data.imgList, (e) => {
+        setTimeout(() => {
+          owo.go({noBack: true,page: "page1"})
+        }, 500)
+      }, (num) => {
+        numBar.style.width = num + '%'
+        mum.innerHTML = num + '%'
+      })
+    },
+    preloadImage: function (src, successFn) {
+      var image = new Image()
+      image.src = src
+      image.onload = function () {
+        successFn && successFn(src)
+      }
+      image.onerror = function (error) {
+        successFn && successFn(src)
+      }
+    },
+    preloadImages: function (srcs, doneFn, progressFn) {
+      if (!Array.isArray(srcs)) {
+        console.log('第一个参数只能是一个数组')
+      } else {
+        var allCount = srcs.length
+        var doneCount = 0
+        srcs.forEach((srcItem) => {
+          this.preloadImage(srcItem, function () {
+            doneCount++
+            progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+            if (doneCount === allCount) {
+              doneFn && doneFn()
+            }
+          })
+        })
+      }
+    }
+  }
+</script>
+
+
+<style lang="less">
+.loading-box {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#e60012, #bb4138);
+}
+.loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16%;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+}
+.loading-bar {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  height: 14px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  padding: 10px;
+}
+.num-bar {
+  background-color: #F44336;
+  height: 14px;
+  border-radius: 7px;
+  width: 0%;
+}
+.num, .text {
+  position: absolute;
+  top: 0%;
+  bottom: -8%;
+  margin: auto;
+  line-height: 50px;
+  height: 50px;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.text {
+  bottom: -14%;
+} 
+</style>
