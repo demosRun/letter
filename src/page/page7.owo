@@ -1,0 +1,40 @@
+<template lang="pug">
+.page7
+  img.share-bg(src="@|share-bg.png|")
+  //- 二维码
+  img.liuyan(src="@|liuyan.png|")
+  .so.button(o-tap="next")
+    .text-box.so 分享
+    img.so.bottom-bg(src="@|125.png|")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.page7 {
+  background-image: url('@|48.jpg|');
+}
+.share-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 57%;
+  margin: 0 auto;
+}
+.liuyan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 340px;
+  margin: auto;
+}
+</style>

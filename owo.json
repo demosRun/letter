@@ -98,6 +98,11 @@
 		{
 			"name": "html2canvas",
 			"src": "./owo_modules/html2canvas.min.js"
+		},
+		{
+			"name": "touch",
+			"afterbody": true,
+			"src": "./owo_modules/touch.js"
 		}
 	],
 	"styleList": [
@@ -141,6 +146,11 @@
 		{
 			"name": "page6",
 			"src": "/src/page/page6.owo",
+			"type": "page"
+		},
+		{
+			"name": "page7",
+			"src": "/src/page/page7.owo",
 			"type": "page"
 		}
 	],
