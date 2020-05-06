@@ -28,6 +28,24 @@ module.exports = {
     video: null,
     musicIsPlaying: false
   },
+  created: function () {
+    owo.tool.toast('上划进行留言！')
+    // 注册上滑事件
+    owo.tool.touch({
+      el: this.$el,
+      end: function (e) {
+        // owo.go(//moveToTop/moveFromBottom)
+        if (e.swipe[1] < -100) {
+          owo.go({
+            page: 'page7',
+            noBack: true,
+            inAnimation: 'moveToTop',
+            outAnimation: 'moveFromBottom',
+          })
+        }
+      }
+    })
+  },
   show: function () {
     console.log(this.data)
     // 判断是否有音频和视频

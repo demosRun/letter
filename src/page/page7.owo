@@ -3,12 +3,33 @@
   img.share-bg(src="@|share-bg.png|")
   //- 二维码
   img.liuyan(src="@|liuyan.png|")
-  .so.button(o-tap="next")
+  .so.button(o-tap="showShare")
     .text-box.so 分享
     img.so.bottom-bg(src="@|125.png|")
 </template>
 <script>
 module.exports = {
+  created: function () {
+    // 注册上滑事件
+    owo.tool.touch({
+      el: this.$el,
+      end: function (e) {
+        if (e.swipe[1] > 100) {
+          owo.go({
+            page: 'page5',
+            noBack: true,
+            inAnimation: 'moveToBottom',
+            outAnimation: 'moveFromTop',
+          })
+        }
+      }
+    })
+  },
+  showShare: function () {
+    setTimeout(() => {
+      owo.script.share.showShare()
+    }, 300);
+  }
 }
 </script>
 <style lang="less">

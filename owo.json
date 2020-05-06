@@ -152,6 +152,11 @@
 			"name": "page7",
 			"src": "/src/page/page7.owo",
 			"type": "page"
+		},
+		{
+			"name": "share",
+			"src": "https://template.owo.ink/51ca7ab4c38de699.owo",
+			"type": "block"
 		}
 	],
 	"mode": {
@@ -194,5 +199,13 @@
 		"out": "scaleUp",
 		"backIn": "moveToRight",
 		"backOut": "scaleUp"
+	},
+	"pageAni": {
+		"share": {
+			"in": "moveToBottom",
+			"out": "moveFromTop",
+			"backIn": "moveToTop",
+			"backOut": "moveFromBottom"
+		}
 	}
 }

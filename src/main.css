@@ -74,7 +74,7 @@ select {
 .button .bottom-bg {
   left: 0px;
   top: 19px;
-  z-index: -2;
+  position: absolute;
 }
 .button:active .text-box {
   top: 10px;

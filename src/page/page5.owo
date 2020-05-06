@@ -23,14 +23,18 @@ module.exports = {
     setTimeout(() => {
       this.query('.so-1').style.top = '260px'
     }, 800);
+    owo.tool.toast('上划进入留言页')
     // 注册上滑事件
     owo.tool.touch({
       el: this.$el,
       end: function (e) {
+        // owo.go(//moveToTop/moveFromBottom)
         if (e.swipe[1] < -100) {
           owo.go({
             page: 'page7',
-            noBack: true
+            noBack: true,
+            inAnimation: 'moveToTop',
+            outAnimation: 'moveFromBottom',
           })
         }
       }
