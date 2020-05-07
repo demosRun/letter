@@ -39,7 +39,7 @@ module.exports = {
         page: 'page3',
         noBack: true
       })
-    }, 3500);
+    }, 6500);
   }
 }
 </script>
@@ -56,7 +56,7 @@ module.exports = {
   z-index: 0;
   width: 1356px;
   height: 629px;
-  transition: left 3s linear;
+  transition: left 6s linear;
   .so {
     background-image: url('@|12.png|');
     color: white;

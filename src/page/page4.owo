@@ -87,7 +87,6 @@ module.exports = {
     audio.pause()
     this.query('.so-5').src = "@|music.png|"
     this.data.musicIsPlaying = false
-    buttonMusic.play()
     owo.go({
       page: 'page5',
       noBack: true
@@ -99,8 +98,6 @@ module.exports = {
     audio.pause()
     this.query('.so-5').src = "@|music.png|"
     this.data.musicIsPlaying = false
-
-    buttonMusic.play()
     owo.go({
       page: 'page3',
       noBack: true

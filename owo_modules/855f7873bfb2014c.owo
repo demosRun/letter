@@ -1,6 +1,8 @@
 <template lang="pug">
 .loading-box
   img.loading(src="@|loading-logo.png|")
+  //- 地方logo
+  img.difang(src="@|difanglogo.png|")
   .loading-bar
     .num-bar
   span.text Loading
@@ -133,5 +135,12 @@
 }
 .text {
   bottom: -14%;
-} 
+}
+.difang {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 950px;
+  margin: auto;
+}
 </style>

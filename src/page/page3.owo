@@ -6,7 +6,7 @@
     ul
       //- 保留条目
       li
-        .city(style="color: #ccc; font-size: 36px;") 滚动选择省份
+        .city(style="font-size: 36px;") 滚动选择省份
       li
         .city 山西省委书记
         .edit
@@ -115,7 +115,7 @@
         .city 广东省委书记
       //- 保留条目
       li
-        .city(style="color: #ccc; font-size: 36px;") 没有更多省份了
+        .city(style="font-size: 36px;") 没有更多省份了
   .so.so-2.button(o-tap="next")
     .text-box.so 确定
     img.so.bottom-bg(src="@|125.png|")
@@ -142,7 +142,6 @@ module.exports = {
       cityList.forEach(element => {
         element.classList.remove('checked')
       });
-      new Audio("@|Button47.wav|").play()
       setTimeout(() => {
         cityList[-activeIndex + 1].classList.add('checked')
         this.data.activeEL = cityList[-activeIndex + 1]
@@ -175,7 +174,6 @@ module.exports = {
       
       // document.querySelector('.page4 .so-0').innerHTML = music
       // document.querySelector('.page4 .so-0').innerHTML = video
-      buttonMusic.play()
       owo.go({
         page: 'page4',
         noBack: true
@@ -227,6 +225,7 @@ module.exports = {
 }
 .wheel-view li {
   margin: 30px 0;
+  color: #386b99;
   .edit {
     display: none;
   }

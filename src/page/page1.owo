@@ -19,7 +19,6 @@
       owo.animate('bounceIn', this.query('.so-2'), 1600)
     },
     goPage: function () {
-      buttonMusic.play()
       owo.go({
         page: 'page2',
         noBack: true

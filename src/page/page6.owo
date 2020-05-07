@@ -268,7 +268,6 @@ module.exports = {
     getCode(this.query('.so-9').value, this.query('.so-11'))
   },
   leavingMessage: function () {
-    buttonMusic.play()
     sendMessage()
   }
 }

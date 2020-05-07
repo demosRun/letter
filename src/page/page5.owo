@@ -41,18 +41,15 @@ module.exports = {
     })
   },
   saveImage: function () {
-    buttonMusic.play()
     owo.tool.toast('长按图片保存!')
   },
   back: function () {
-    buttonMusic.play()
     owo.go({
       page: 'page3',
       noBack: true
     })
   },
   next: function () {
-    buttonMusic.play()
     owo.go({
       page: 'page6',
       noBack: true
