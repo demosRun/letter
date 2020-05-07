@@ -1,12 +1,13 @@
 <template lang="pug">
 .page5
   img.so.so-0(src="@|143.png|")
-  .so.so-1
-    img.so.so-2(src="@|151.png|")
-    img.so.so-3(src="@|153.png|")
-    .share-text-box
-  img.so.so-4(src="@|148.png|")
-  img.so.so-5(src="@|54.png|")
+  //- .so.so-1
+  //-   img.so.so-2(src="@|151.png|")
+  //-   img.so.so-3(src="@|153.png|")
+  //-   .share-text-box
+  //- img.so.so-4(src="@|148.png|")
+  //- img.so.so-5(src="@|54.png|")
+  img.show(src="@|show.png|")
   .so.so-6.button.mini(o-tap="saveImage")
     .text-box.so 保存图片
     img.so.bottom-bg(src="@|125.png|")
@@ -20,9 +21,9 @@
 <script>
 module.exports = {
   created: function () {
-    setTimeout(() => {
-      this.query('.so-1').style.top = '260px'
-    }, 800);
+    // setTimeout(() => {
+    //   this.query('.so-1').style.top = '260px'
+    // }, 800);
     owo.tool.toast('上划进入留言页')
     // 注册上滑事件
     owo.tool.touch({
@@ -147,5 +148,14 @@ module.exports = {
   h1 {
     font-size: 40px;
   }
+}
+.show {
+  height: 970px;
+  position: absolute;
+  top: 261px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
 }
 </style>

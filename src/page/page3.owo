@@ -154,7 +154,11 @@ module.exports = {
       owo.tool.toast('当前省份暂时没有内容!')
       return
     }
-    
+    owo.go({
+      page: 'page4',
+      noBack: true
+    })
+    return
     const title = info.querySelector('h1').innerHTML
     const name = info.querySelector('h2').innerHTML
     const position = info.querySelector('h3').innerHTML

@@ -18,25 +18,25 @@ var turnHref = 'http://paike.people.com.cn/df_shaohua/'
 //   return
 // }
 // 如果是微信则跳转到 授权页面
-if (window.isWeiXin) {
-  if (location.href.indexOf('id=') > -1) {
-    var arr = /id=([a-z0-9A-Z]+)/.exec(location.href)
-    if (arr) {
-      window.pid = arr[1]
-      console.log('是微信打开的，pid是' + window.pid)
-      if (arr[1]) {
-        $.get('http://paike.people.com.cn/df_shaohua/index/getUser', {id: window.pid}, function(data) {
-          document.querySelector('.page5 .so-2').src = data.msg.headImg
-        }, 'jsonp');
-      }
+// if (window.isWeiXin) {
+//   if (location.href.indexOf('id=') > -1) {
+//     var arr = /id=([a-z0-9A-Z]+)/.exec(location.href)
+//     if (arr) {
+//       window.pid = arr[1]
+//       console.log('是微信打开的，pid是' + window.pid)
+//       if (arr[1]) {
+//         $.get('http://paike.people.com.cn/df_shaohua/index/getUser', {id: window.pid}, function(data) {
+//           document.querySelector('.page5 .so-2').src = data.msg.headImg
+//         }, 'jsonp');
+//       }
       
       
-    }
-  } else {
-    if (/Android/i.test(navigator.userAgent)) {
-      location.href = turnHref + '?t=' + new Date()
-    } else {
-      location.href = turnHref
-    }
-  }
-}
+//     }
+//   } else {
+//     if (/Android/i.test(navigator.userAgent)) {
+//       location.href = turnHref + '?t=' + new Date()
+//     } else {
+//       location.href = turnHref
+//     }
+//   }
+// }
