@@ -113,6 +113,10 @@
         .city 陕西省委书记
       li
         .city 广东省委书记
+      li
+        .city(style="line-height: 60px;font-size: 35px;") 新疆维吾尔族自治区主席雪克来提扎克尔
+      li
+        .city 山东省省委书记
       //- 保留条目
       li
         .city(style="font-size: 36px;") 没有更多省份了
@@ -233,6 +237,8 @@ module.exports = {
 .wheel-view li {
   margin: 30px 0;
   color: #386b99;
+  height: 120px;
+  overflow: hidden;
   .edit {
     display: none;
   }
