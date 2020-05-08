@@ -350,25 +350,25 @@ module.exports = {
 .so-6 {
   left: 85px;
   top: 499px;
-  width: 546px;
-  height: 157px;
+  width: 526px;
+  height: 137px;
   z-index: 6;
   background-repeat: no-repeat;
   border: none;
-  font-size: 32px;
-  padding: 10px;
+  font-size: 28px;
+  padding: 20px;
   background-image: url('@|146.png|');
 }
 .so-7 {
   left: 85px;
   top: 729px;
-  width: 546px;
-  height: 107px;
+  width: 526px;
+  height: 87px;
   z-index: 5;
   background-repeat: no-repeat;
   border: none;
-  font-size: 32px;
-  padding: 10px;
+  font-size: 28px;
+  padding: 20px;
   background-image: url('@|147.png|');
 }
 .so-8 {

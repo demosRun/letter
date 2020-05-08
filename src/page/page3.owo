@@ -114,7 +114,7 @@
       li
         .city 广东省委书记
       li
-        .city(style="line-height: 60px;font-size: 35px;") 新疆维吾尔族自治区主席雪克来提扎克尔
+        .city(style="line-height: 60px;font-size: 40px;") 新疆维吾尔族自治区主席
       li
         .city 山东省省委书记
       //- 保留条目
@@ -141,7 +141,10 @@ module.exports = {
     myScroll.on('scrollEnd', () => {
       console.log('滚动结束!')
       const activeIndex = Math.round(myScroll.y / 150)
-      myScroll.scrollTo(0, activeIndex * 150, 100)
+      console.log(myScroll.y, activeIndex * 150)
+      let scrollY = activeIndex * 150
+      if (scrollY < myScroll.y) scrollY = myScroll.y
+      myScroll.scrollTo(0, scrollY, 100)
       if (this.data.activeIndex === activeIndex) return
       this.data.activeIndex = activeIndex
       cityList.forEach(element => {
@@ -245,7 +248,10 @@ module.exports = {
 }
 .wheel-view li.checked {
   color: #386b99;
-  font-size: 60px;
+  font-size: 52px;
   background-color: #f7e8ce;
+}
+.city {
+  padding: 0 5px;
 }
 </style>
