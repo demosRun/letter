@@ -1,6 +1,6 @@
 <template lang="pug">
 .page3
-  img.so.so-0(src="@|46.png|")
+  img.so.so-0(src="@|119.png|")
   img.so.so-1(src="@|45.png|" o-animation="flicker")
   #wrapper.wheel-view
     ul
@@ -127,6 +127,7 @@ module.exports = {
     activeEL: null
   },
   created: function () {
+    owo.animate('pulse', this.query('.so-0'))
     const cityList = this.queryAll('.wheel-view ul li')
     var myScroll = new IScroll(this.query('#wrapper'), {
       scrollbars: true
@@ -197,25 +198,27 @@ module.exports = {
   position: absolute;
 }
 .so-0 {
-  left: 184px;
-  top: 317px;
+  left: 0;
+  right: 0;
+  top: 270px;
   z-index: 2;
+  margin: auto;
 }
 .so-1 {
   left: 274px;
-  top: 871px;
+  top: 1018px;
   z-index: 1;
 }
 .so-2 {
   left: 231px;
-  top: 1017px;
+  top: 1080px;
   z-index: 0;
 }
 .wheel-view {
   position: absolute;
   left: 0;
   right: 0;
-  top: -19%;
+  top: 0%;
   bottom: 0;
   margin: auto;
   width: 400px;

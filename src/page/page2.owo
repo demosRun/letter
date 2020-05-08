@@ -25,12 +25,11 @@
       img(src="@|user-image.png|")
       h2 用户名
       h3 “文字内容文字内容文字内容文字内容”
-  img.so.text(src="@|119.png|")
+  img.so.text(src="@|huixin.png|")
 </template>
 <script>
 module.exports = {
   created: function () {
-    owo.animate('pulse', this.query('.text'))
     setTimeout(() => {
       this.query('.box').style.left = '-800px'
     }, 800);
@@ -84,9 +83,11 @@ module.exports = {
   }
 }
 .text {
-  left: 59px;
+  left: 0;
+  right: 0;
   top: 1001px;
   z-index: 0;
+  margin: auto;
 }
 .so-0 {
   left: 560px;
