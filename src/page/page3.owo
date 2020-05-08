@@ -6,7 +6,7 @@
     ul
       //- 保留条目
       li
-        .city(style="font-size: 36px;") 滚动选择省份
+        .city(style="font-size: 36px;")  
       li
         .city 山西省委书记
         .edit
@@ -119,7 +119,7 @@
         .city 山东省省委书记
       //- 保留条目
       li
-        .city(style="font-size: 36px;") 没有更多省份了
+        .city(style="font-size: 36px;")  
   .so.so-2.button(o-tap="next")
     .text-box.so 确定
     img.so.bottom-bg(src="@|125.png|")
