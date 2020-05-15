@@ -1,13 +1,7 @@
 <template lang="pug">
 .page5
   img.so.so-0(src="@|143.png|")
-  //- .so.so-1
-  //-   img.so.so-2(src="@|151.png|")
-  //-   img.so.so-3(src="@|153.png|")
-  //-   .share-text-box
-  //- img.so.so-4(src="@|148.png|")
-  //- img.so.so-5(src="@|54.png|")
-  img.show(src="@|show.png|")
+  img.show
   .so.so-6.button.mini(o-tap="saveImage" style="pointer-events: none;user-select: none;")
     .text-box.so(style="font-size: 20px;") 长按图片保存海报
     img.so.bottom-bg(src="@|125.png|")
